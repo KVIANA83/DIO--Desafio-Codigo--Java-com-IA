@@ -1,9 +1,6 @@
 import java.util.ArrayList;
-
 import java.util.List;
-
 import java.util.Scanner;
-
 
 
 public class RegistroTransacoesBancarias {
@@ -78,6 +75,16 @@ public class RegistroTransacoesBancarias {
 
         // TODO: Exibir o saldo final e a lista de transações conforme a tabela de Exemplos.
 
+        System.out.println("Saldo: " + saldo);
+
+        System.out.println("Transacoes:");
+
+        for (int i = 0; i < transacoes.size(); i++) {
+
+            System.out.println((i + 1) + ". " + transacoes.get(i));
+
+        }
+
 
 
         // Fechar o scanner para evitar vazamentos de recursos
@@ -86,4 +93,4 @@ public class RegistroTransacoesBancarias {
 
     }
 
-              }
+}
